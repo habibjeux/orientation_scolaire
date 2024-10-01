@@ -28,7 +28,7 @@ const formSchema = z.object({
     .string()
     .nonempty("Le nom est requis")
     .min(3, "Le nom doit contenir au moins 3 caractères"),
-  adresse: z.string().nullable(),
+  adresse: z.string(),
 });
 
 type EtablissementFormValues = z.infer<typeof formSchema>;
