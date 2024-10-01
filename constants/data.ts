@@ -38,3 +38,30 @@ export const navItems: NavItem[] = [
     label: "login",
   },
 ];
+
+export const navItemsSchoolAdmin: NavItem[] = [
+  {
+    title: "Dashboard",
+    href: "/school-admin",
+    icon: "dashboard",
+    label: "Dashboard",
+  },
+  {
+    title: "Etudiants",
+    href: "/school-admin/students",
+    icon: "user",
+    label: "user",
+  },
+  {
+    title: "Professeurs",
+    href: "/school-admin/teachers",
+    icon: "teacher",
+    label: "employee",
+  },
+  {
+    title: "Login",
+    href: "/",
+    icon: "login",
+    label: "login",
+  },
+];

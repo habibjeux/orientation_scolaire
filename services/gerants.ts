@@ -24,3 +24,11 @@ export const update_gerant = async (id: string, data: any) => {
 export const delete_gerant = async (id: string) => {
   return await axios.delete(`${API_URL}/gerant/${id}`);
 };
+
+export const assign_etablissement = async (data: any) => {
+  const response = await axios.put(
+    `${API_URL}/gerant/assign-etablissement`,
+    data
+  );
+  return response.data;
+};

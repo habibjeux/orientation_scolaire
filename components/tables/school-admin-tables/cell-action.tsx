@@ -80,7 +80,7 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
           {data.etablissement === null && (
             <DropdownMenuItem
               onClick={() =>
-                router.push(`/admin/school-admins/${data.id}/assign-school`)
+                router.push(`/admin/school-admins/assign/${data.id}`)
               }
             >
               <Edit className="mr-2 h-4 w-4" /> Assigner

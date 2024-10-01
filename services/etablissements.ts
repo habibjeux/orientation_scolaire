@@ -29,3 +29,10 @@ export const update_etablissement = async (
 export const delete_etablissement = async (id: string): Promise<void> => {
   await axios.delete(`${API_URL}/etablissement/${id}`);
 };
+
+export const get_etablissement_no_assigned = async (): Promise<
+  Etablissement[]
+> => {
+  const response = await axios.get(`${API_URL}/etablissement/no_assigned`);
+  return response.data;
+};
