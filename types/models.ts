@@ -17,14 +17,14 @@ export interface Calendrier {
   id: number;
   annee_academique: string; // Format : YYYY-YYYY
   debut: string; // ISO string format
-  fin: string | null; // ISO string format
+  fin: string | ""; // ISO string format
   etablissement_id: number;
-  inscriptions?: Inscription[];
-  enseignements?: Enseigner[];
-  notes?: Note[];
-  appreciations_specifiques?: AppreciationCompetenceSpecifique[];
-  appreciations_comportementales?: AppreciationCompetenceComportementale[];
-  appreciations_aptitudes?: AppreciationAptitude[];
+  // inscriptions?: Inscription[];
+  // enseignements?: Enseigner[];
+  // notes?: Note[];
+  // appreciations_specifiques?: AppreciationCompetenceSpecifique[];
+  // appreciations_comportementales?: AppreciationCompetenceComportementale[];
+  // appreciations_aptitudes?: AppreciationAptitude[];
 }
 
 export interface Etablissement {

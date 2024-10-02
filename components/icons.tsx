@@ -1,6 +1,8 @@
 import {
   AlertTriangle,
   ArrowRight,
+  Book,
+  Calendar,
   Check,
   ChevronLeft,
   ChevronRight,
@@ -8,6 +10,7 @@ import {
   Command,
   CreditCard,
   File,
+  FileStack,
   FileText,
   HelpCircle,
   Image,
@@ -30,9 +33,9 @@ import {
   Twitter,
   User,
   User2Icon,
+  Warehouse,
   X,
 } from "lucide-react";
-
 export type Icon = LucideIcon;
 
 export const Icons = {
@@ -42,6 +45,10 @@ export const Icons = {
   close: X,
   profile: User2Icon,
   school: School,
+  class: Warehouse,
+  calendar: Calendar,
+  register: FileStack,
+  subject: Book,
   "school-admin": PanelsTopLeft,
   spinner: Loader2,
   kanban: CircuitBoardIcon,
